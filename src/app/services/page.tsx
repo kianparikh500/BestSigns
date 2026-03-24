@@ -1,6 +1,14 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
+
+export const metadata: Metadata = {
+  title: "Sign Services",
+  description: "Custom channel letters, monument signs, vehicle wraps, LED signs, storefront graphics & more. Las Vegas sign company serving businesses since 2004. Free quote — call (702) 472-4011.",
+  alternates: { canonical: "/services" },
+  openGraph: { title: "Sign Services | Best Signs Las Vegas", description: "Channel letters, monument signs, vehicle wraps, LED signs & storefront graphics for Las Vegas businesses.", url: "https://bestsignslv.com/services" },
+}
 import {
   Lightbulb, Landmark, Car, Flag, Zap, Store, Sparkles,
   CheckCircle2, ArrowRight,

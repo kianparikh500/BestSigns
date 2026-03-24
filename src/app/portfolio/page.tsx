@@ -1,5 +1,13 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
+
+export const metadata: Metadata = {
+  title: "Sign Portfolio",
+  description: "Browse 500+ completed sign projects across Las Vegas — channel letters, monument signs, vehicle wraps, dimensional signs, storefront graphics & more.",
+  alternates: { canonical: "/portfolio" },
+  openGraph: { title: "Sign Portfolio | Best Signs Las Vegas", description: "500+ completed sign projects in Las Vegas. Channel letters, vehicle wraps, monument signs, dimensional signs & more.", url: "https://bestsignslv.com/portfolio" },
+}
 import { PortfolioGrid } from "@/components/PortfolioGrid"
 import { ArrowRight } from "lucide-react"
 

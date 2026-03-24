@@ -1,5 +1,13 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
+
+export const metadata: Metadata = {
+  title: "Get a Free Quote",
+  description: "Contact Best Signs Las Vegas for a free sign design consultation and quote. Call (702) 472-4011 or visit us at 3111 S Valley View Blvd, Las Vegas, NV 89102.",
+  alternates: { canonical: "/contact" },
+  openGraph: { title: "Get a Free Quote | Best Signs Las Vegas", description: "Free sign design consultation. Call (702) 472-4011 or visit 3111 S Valley View Blvd, Las Vegas NV.", url: "https://bestsignslv.com/contact" },
+}
 import { QuoteForm } from "@/components/QuoteForm"
 import {
   Phone,

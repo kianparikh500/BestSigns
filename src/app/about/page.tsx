@@ -1,6 +1,14 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Best Signs Las Vegas — founded in 2004 by Jim Boone. 20+ years serving Las Vegas businesses with custom signage, in-house fabrication, and full-service installation.",
+  alternates: { canonical: "/about" },
+  openGraph: { title: "About Best Signs Las Vegas", description: "20+ years of custom sign fabrication in Las Vegas. In-house production, licensed & insured, Nevada Sign Association member.", url: "https://bestsignslv.com/about" },
+}
 import {
   Shield,
   Clock,
