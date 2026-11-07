@@ -3,10 +3,10 @@ import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
 
 export const metadata: Metadata = {
-  title: "Get a Free Quote",
-  description: "Contact Best Signs Las Vegas for a free sign design consultation and quote. Call (702) 472-4011 or visit us at 3111 S Valley View Blvd, Las Vegas, NV 89102.",
+  title: "Free Design Consultation",
+  description: "Contact Best Signs Las Vegas for a free sign design consultation. Call (702) 472-4011 or visit us at 3111 S Valley View Blvd, Las Vegas, NV 89102.",
   alternates: { canonical: "/contact" },
-  openGraph: { title: "Get a Free Quote | Best Signs Las Vegas", description: "Free sign design consultation. Call (702) 472-4011 or visit 3111 S Valley View Blvd, Las Vegas NV.", url: "https://bestsignslv.com/contact" },
+  openGraph: { title: "Free Design Consultation | Best Signs Las Vegas", description: "Free sign design consultation. Call (702) 472-4011 or visit 3111 S Valley View Blvd, Las Vegas NV.", url: "https://bestsignslv.com/contact" },
 }
 import { QuoteForm } from "@/components/QuoteForm"
 import {
@@ -71,14 +71,14 @@ export default function ContactPage() {
         <div className="relative container mx-auto px-4 max-w-7xl text-center">
           <AnimatedSection>
             <span className="inline-block bg-[#3b82f6]/10 border border-[#3b82f6]/30 text-[#3b82f6] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
-              Free Quotes — No Obligation
+              Free Consultation — No Obligation
             </span>
             <h1 className="font-oswald text-5xl md:text-7xl font-bold text-white uppercase leading-tight mb-6">
-              Get a <span className="text-[#3b82f6]">Free Quote</span>
+              Book a <span className="text-[#3b82f6]">Free Consultation</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Tell us about your project and we&apos;ll get back to you within 24 hours with a
-              detailed, no-obligation quote.
+              Tell us about your project and we&apos;ll get back to you within 24 hours to set up
+              your free design consultation.
             </p>
           </AnimatedSection>
         </div>

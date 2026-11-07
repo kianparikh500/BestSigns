@@ -3,10 +3,10 @@ import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
 
 export const metadata: Metadata = {
-  title: "Sign Portfolio",
-  description: "Browse 500+ completed sign projects across Las Vegas — channel letters, monument signs, vehicle wraps, dimensional signs, storefront graphics & more.",
+  title: "Design Portfolio",
+  description: "Browse sign designs by Best Signs Las Vegas: storefront signs, dimensional and lobby signs, vehicle wraps, monument signs & more.",
   alternates: { canonical: "/portfolio" },
-  openGraph: { title: "Sign Portfolio | Best Signs Las Vegas", description: "500+ completed sign projects in Las Vegas. Channel letters, vehicle wraps, monument signs, dimensional signs & more.", url: "https://bestsignslv.com/portfolio" },
+  openGraph: { title: "Design Portfolio | Best Signs Las Vegas", description: "Sign and vehicle wrap designs for Las Vegas businesses.", url: "https://bestsignslv.com/portfolio" },
 }
 import { PortfolioGrid } from "@/components/PortfolioGrid"
 import { ArrowRight } from "lucide-react"
@@ -33,8 +33,8 @@ export default function PortfolioPage() {
               Sign <span className="text-[#3b82f6]">Portfolio</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Browse hundreds of completed sign projects across Las Vegas — from channel letters
-              and monument signs to vehicle wraps and custom fabrications.
+              Browse sign designs we have created for Las Vegas businesses, from storefront signs
+              and lobby signs to vehicle wraps and custom logos.
             </p>
           </AnimatedSection>
 
@@ -80,7 +80,7 @@ export default function PortfolioPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-[#3b82f6] hover:bg-[#3b82f6]/90 text-black font-bold px-10 py-4 rounded-lg uppercase tracking-wider shadow-lg shadow-[#3b82f6]/20 transition-all hover:-translate-y-0.5"
               >
-                Get a Free Quote
+                Free Design Consultation
                 <ArrowRight size={16} />
               </Link>
               <Link

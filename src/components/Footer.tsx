@@ -1,15 +1,15 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
-import { business } from "@/content"
+import { business, scopeDisclosure } from "@/content"
 
 const services = [
-  { href: "/services#channel-letters", label: "Channel Letters" },
-  { href: "/services#monument-signs", label: "Monument Signs" },
-  { href: "/services#vehicle-wraps", label: "Vehicle Wraps" },
-  { href: "/services#banners", label: "Banners & Displays" },
-  { href: "/services#led-signs", label: "LED Signs" },
-  { href: "/services#storefront", label: "Storefront Signs" },
+  { href: "/services#custom-sign-design", label: "Custom Sign Design" },
+  { href: "/services#storefront-sign-design", label: "Storefront Sign Design" },
+  { href: "/services#vehicle-wrap-design", label: "Vehicle Wrap Design" },
+  { href: "/services#banner-display-design", label: "Banner & Display Design" },
+  { href: "/services#monument-sign-design", label: "Monument Sign Design" },
+  { href: "/services#design-consultation", label: "Design Consultation" },
 ]
 
 const company = [
@@ -17,7 +17,7 @@ const company = [
   { href: "/about", label: "About Us" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact", label: "Contact" },
-  { href: "/contact", label: "Get a Quote" },
+  { href: "/contact", label: "Free Consultation" },
 ]
 
 export function Footer() {
@@ -150,8 +150,13 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Scope of services disclosure — required while unlicensed (see docs/C6_COMPLIANCE_PLAN.md) */}
+        <p className="mt-12 text-gray-500 text-xs leading-relaxed max-w-4xl">
+          {scopeDisclosure}
+        </p>
+
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/[0.06] flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-6 pt-8 border-t border-white/[0.06] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm text-center">
             &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
           </p>

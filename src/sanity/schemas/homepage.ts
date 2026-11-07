@@ -18,7 +18,7 @@ export const homepage = defineType({
       title: "Badge Text",
       type: "string",
       group: "hero",
-      description: 'The small text at the top, e.g. "Las Vegas\'s #1 Sign Company"',
+      description: 'The small text at the top, e.g. "Las Vegas Sign Design Studio"',
     }),
     defineField({
       name: "heroHeading",

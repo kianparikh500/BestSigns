@@ -93,7 +93,7 @@ export function Navbar() {
             href="/contact"
             className="relative overflow-hidden bg-[#3b82f6] hover:bg-[#2563eb] text-black font-bold px-5 py-2.5 rounded-lg uppercase tracking-wider text-xs shadow-lg shadow-[#3b82f6]/25 transition-all duration-200 hover:shadow-[#3b82f6]/40 hover:-translate-y-px group"
           >
-            <span className="relative z-10">Get a Quote</span>
+            <span className="relative z-10">Free Consultation</span>
             <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
           </Link>
         </div>
@@ -164,7 +164,7 @@ export function Navbar() {
                   href="/contact"
                   className="bg-[#3b82f6] hover:bg-[#2563eb] text-black font-bold py-3.5 rounded-xl uppercase tracking-wider text-center text-sm transition-colors shadow-lg shadow-[#3b82f6]/20"
                 >
-                  Get a Free Quote
+                  Free Design Consultation
                 </Link>
               </div>
             </div>

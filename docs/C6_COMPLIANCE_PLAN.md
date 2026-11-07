@@ -9,6 +9,13 @@ advertise or offer contracting work (NRS ch. 624).
 
 ---
 
+## Status (Nov 2026)
+
+- **D1 answered:** no license is held. The site was rewritten as design-only (§2.1–2.9 implemented).
+- **Portfolio answered:** Best Signs made all the pictured signs. They are kept and recaptioned as designs. The only shop-fabrication photo (`fabrication-letters.jpg`) was removed from the site.
+- **D5 still open:** the code keeps `bestsignslv.com`, which matches the business email.
+- **Still to do:** the off-site cleanup (§2.11), the legal review (§3 step 8), any real testimonials, and adding back stats only if they can be documented.
+
 ## 0. Decisions to make before editing anything
 
 | # | Decision | Why it matters |
