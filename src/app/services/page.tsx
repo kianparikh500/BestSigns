@@ -4,10 +4,10 @@ import Link from "next/link"
 import { AnimatedSection } from "@/components/AnimatedSection"
 
 export const metadata: Metadata = {
-  title: "Sign Services",
-  description: "Custom channel letters, monument signs, vehicle wraps, LED signs, storefront graphics & more. Las Vegas sign company serving businesses since 2004. Free quote — call (702) 472-4011.",
+  title: "Sign Design Services",
+  description: "Custom sign design, storefront sign design, vehicle wrap design, banner graphics & design consultation for Las Vegas businesses. Free consultation — call (702) 472-4011.",
   alternates: { canonical: "/services" },
-  openGraph: { title: "Sign Services | Best Signs Las Vegas", description: "Channel letters, monument signs, vehicle wraps, LED signs & storefront graphics for Las Vegas businesses.", url: "https://bestsignslv.com/services" },
+  openGraph: { title: "Sign Design Services | Best Signs Las Vegas", description: "Sign, storefront, vehicle wrap & banner design for Las Vegas businesses.", url: "https://bestsignslv.com/services" },
 }
 import {
   Lightbulb, Landmark, Car, Flag, Zap, Store, Sparkles,
@@ -39,8 +39,8 @@ export default function ServicesPage() {
               Our <span className="text-[#3b82f6]">Services</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              From channel letters to vehicle wraps, we deliver complete sign solutions for every
-              Las Vegas business — designed to attract, built to last.
+              From storefront signs to vehicle wraps, we design signage for every
+              Las Vegas business, delivered as ready-to-build artwork files.
             </p>
           </AnimatedSection>
         </div>
@@ -111,7 +111,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 bg-[#3b82f6] hover:bg-[#3b82f6]/90 text-black font-bold px-8 py-4 rounded-lg uppercase tracking-wider text-sm shadow-lg shadow-[#3b82f6]/20 transition-all duration-200 hover:shadow-[#3b82f6]/40 hover:-translate-y-0.5"
                   >
-                    Get a Quote
+                    Book a Consultation
                     <ArrowRight size={16} />
                   </Link>
                 </AnimatedSection>
@@ -129,7 +129,7 @@ export default function ServicesPage() {
               Don&apos;t See What You Need?
             </h2>
             <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">
-              We handle custom projects of all sizes. Contact us and we&apos;ll design a sign
+              We take on custom design projects of all sizes. Contact us and we&apos;ll design a sign
               solution specifically for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -137,7 +137,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-[#3b82f6] hover:bg-[#3b82f6]/90 text-black font-bold px-10 py-4 rounded-lg uppercase tracking-wider shadow-lg shadow-[#3b82f6]/20 transition-all hover:-translate-y-0.5"
               >
-                Get a Free Quote
+                Free Design Consultation
                 <ArrowRight size={16} />
               </Link>
               <a

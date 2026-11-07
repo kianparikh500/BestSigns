@@ -35,7 +35,7 @@ export default function HomePage() {
               Our Sign Services
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              From concept to installation, we deliver complete signage solutions for every type of business.
+              From first sketch to final artwork, we design signage for every type of business.
             </p>
           </AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,10 +83,10 @@ export default function HomePage() {
               Our Work
             </span>
             <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white uppercase tracking-tight mb-4">
-              Signs We&apos;ve Built
+              Designs We&apos;ve Created
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              A look at some of our favourite projects across Las Vegas.
+              A look at some of our favorite designs across Las Vegas.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
@@ -153,11 +153,11 @@ export default function HomePage() {
               </span>
               <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white uppercase tracking-tight mb-6">
                 We&apos;re Not Just{" "}
-                <span className="text-[#3b82f6]">Another Sign Shop</span>
+                <span className="text-[#3b82f6]">Another Design Shop</span>
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
                 With over 20 years serving Las Vegas businesses, we combine artistic expertise with
-                advanced manufacturing to deliver signage that drives real results.
+                practical sign-design know-how to create signage that drives real results.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {whyUs.map((item) => {
@@ -190,7 +190,7 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden">
                 <Image
                   src={whyUsImage}
-                  alt="Sign production workshop"
+                  alt="Sign design example"
                   width={700}
                   height={550}
                   className="object-cover w-full h-[450px] rounded-2xl"
@@ -237,7 +237,7 @@ export default function HomePage() {
               Ready to Get Started?
             </span>
             <h2 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold text-white uppercase tracking-tight mb-6">
-              Let&apos;s Build Your{" "}
+              Let&apos;s Design Your{" "}
               <span className="text-[#3b82f6]">Perfect Sign</span>
             </h2>
             <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
@@ -249,7 +249,7 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-[#3b82f6] hover:bg-[#3b82f6]/90 text-black font-bold px-10 py-4 rounded-lg uppercase tracking-wider text-sm shadow-lg shadow-[#3b82f6]/30 transition-all duration-200 hover:-translate-y-1 group"
               >
-                Get a Free Quote
+                Free Design Consultation
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </Link>
               <a

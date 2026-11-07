@@ -8,13 +8,14 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 
 const signTypes = [
-  "Channel Letters",
-  "Monument Sign",
-  "Vehicle Wrap",
-  "Banner / Display",
-  "LED Sign",
-  "Storefront Sign",
-  "Custom / Other",
+  "Custom Sign Design",
+  "Storefront Sign Design",
+  "Vehicle Wrap Design",
+  "Banner / Display Design",
+  "Monument / Pylon Sign Design",
+  "Wayfinding / Interior Sign Design",
+  "Design Consultation",
+  "Other",
 ]
 
 export function QuoteForm() {
@@ -72,11 +73,11 @@ export function QuoteForm() {
           <CheckCircle size={32} className="text-[#3b82f6]" />
         </div>
         <h3 className="font-oswald text-2xl font-bold text-white mb-2 uppercase">
-          Quote Request Received!
+          Request Received!
         </h3>
         <p className="text-gray-400 mb-6">
           Thank you, {formData.name}! We&apos;ll review your request and get back to you within 24
-          hours with a detailed quote.
+          hours to schedule your design consultation.
         </p>
         <button
           onClick={() => {
@@ -94,7 +95,7 @@ export function QuoteForm() {
   return (
     <div className="bg-[#111] border border-white/10 rounded-2xl p-8">
       <h2 className="font-oswald text-2xl font-bold text-white uppercase tracking-wide mb-2">
-        Request a Free Quote
+        Request a Free Design Consultation
       </h2>
       <p className="text-gray-400 text-sm mb-6">
         Fill out the form below and we&apos;ll get back to you within 24 hours.
@@ -165,7 +166,7 @@ export function QuoteForm() {
         {/* Sign Type */}
         <div className="flex flex-col gap-1.5">
           <Label htmlFor="signType" className="text-gray-300 text-sm font-medium">
-            Sign Type <span className="text-[#3b82f6]">*</span>
+            Design Type <span className="text-[#3b82f6]">*</span>
           </Label>
           <select
             id="signType"
@@ -173,7 +174,7 @@ export function QuoteForm() {
             onChange={handleChange("signType")}
             className="w-full bg-white/5 border border-white/10 text-white rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-2 focus:ring-[#3b82f6]/20 transition-colors"
           >
-            <option value="" disabled className="bg-[#111] text-gray-400">Select a sign type...</option>
+            <option value="" disabled className="bg-[#111] text-gray-400">Select a design type...</option>
             {signTypes.map((type) => (
               <option key={type} value={type} className="bg-[#111] text-white">{type}</option>
             ))}
@@ -213,7 +214,7 @@ export function QuoteForm() {
           ) : (
             <>
               <Send size={16} />
-              Send Quote Request
+              Send Request
             </>
           )}
         </button>

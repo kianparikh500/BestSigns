@@ -10,7 +10,7 @@
 // ------------------------------------------------------------
 export const business = {
   name: "Best Signs Las Vegas",
-  tagline: "Las Vegas's #1 Sign Company",
+  tagline: "Custom Sign Design for Las Vegas Businesses",
   phone: "(702) 472-4011",
   phoneHref: "tel:+17024724011",
   email: "info@bestsignslv.com",
@@ -31,28 +31,41 @@ export const business = {
 }
 
 // ------------------------------------------------------------
+//  SCOPE OF SERVICES — READ BEFORE EDITING
+//  Best Signs Las Vegas does NOT hold a Nevada contractor (C-6) license.
+//  The site may only advertise sign DESIGN and design consultation.
+//  Do NOT add copy offering or implying: installation, fabrication,
+//  production/printing, repair, refurbishing, maintenance, electrical or
+//  LED wiring, structural work, permit pulling, "licensed", "insured",
+//  warranties on physical signs, or "full-service"/"turnkey" packages.
+//  See docs/C6_COMPLIANCE_PLAN.md.
+// ------------------------------------------------------------
+export const scopeDisclosure =
+  "Best Signs Las Vegas provides sign design and design-consultation services only. We do not fabricate, produce, install, repair, or perform electrical or structural work on signs. Physical sign work must be performed by a contractor licensed by the Nevada State Contractors Board."
+
+// ------------------------------------------------------------
 //  HERO SECTION  (the big banner on the homepage)
 // ------------------------------------------------------------
 export const hero = {
-  badge: "Las Vegas's #1 Sign Company",
-  heading: "Custom Signs That Make Your Business Stand Out",
+  badge: "Las Vegas Sign Design Studio",
+  heading: "Sign Designs That Make Your Business Stand Out",
   subtext:
-    "From channel letters to vehicle wraps, we design and install high-impact signage that drives customers to your door. Serving Las Vegas since 2005.",
+    "From storefront signs to vehicle wraps, we design high-impact signage and hand you ready-to-build artwork files for the licensed sign contractor of your choice. Serving Las Vegas since 2004.",
   backgroundImage: "/images/hero-bg.jpg",
   checks: [
     "Free Design Consultation",
-    "Quick Turnaround",
-    "Lifetime Warranty",
-    "Licensed & Insured",
+    "Photo-Realistic Mockups",
+    "Revisions Until It's Right",
+    "Print-Ready Files",
   ],
   stats: [
-    { value: "500+", label: "Projects Completed" },
     { value: "20+", label: "Years Experience" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "24/7", label: "Support Available" },
+    { value: "100%", label: "Custom Designs" },
+    { value: "Free", label: "Consultation" },
+    { value: "1-on-1", label: "Owner-Led Service" },
   ],
-  primaryCta: { label: "Get a Free Quote", href: "/contact" },
-  secondaryCta: { label: "View Our Work", href: "/portfolio" },
+  primaryCta: { label: "Free Design Consultation", href: "/contact" },
+  secondaryCta: { label: "View Our Designs", href: "/portfolio" },
 }
 
 // ------------------------------------------------------------
@@ -60,63 +73,64 @@ export const hero = {
 // ------------------------------------------------------------
 export const homepageServices = [
   {
-    title: "Channel Letters",
+    title: "Custom Sign Design",
     description:
-      "Illuminated 3D letters that make your business name shine day and night with vibrant LED lighting.",
-    image: "/images/fabrication-letters.jpg",
-    href: "/services#channel-letters",
-    icon: "Zap",
+      "Original sign concepts and 3D renderings built around your brand, shown day and night before anything is made.",
+    image: "/images/custom-femz.jpg",
+    href: "/services#custom-sign-design",
+    icon: "Sparkles",
   },
   {
-    title: "Monument Signs",
+    title: "Storefront Sign Design",
     description:
-      "Freestanding monument signs that create a lasting first impression at your property entrance.",
-    image: "/images/monument-valet-dusk.jpg",
-    href: "/services#monument-signs",
-    icon: "Shield",
-  },
-  {
-    title: "Vehicle Wraps",
-    description:
-      "Turn your vehicles into mobile billboards with stunning full or partial vehicle wrap designs.",
-    image: "/images/vehicle-warehouse.jpg",
-    href: "/services#vehicle-wraps",
-    icon: "Award",
-  },
-  {
-    title: "Banners & Displays",
-    description:
-      "High-impact banners and trade show displays designed to capture attention at any event.",
-    image: "/images/vehicle-florist.jpg",
-    href: "/services#banners",
-    icon: "Star",
-  },
-  {
-    title: "LED Signs",
-    description:
-      "Dynamic LED signs and digital displays that deliver your message with maximum visual impact.",
-    image: "/images/storefront-nevada-suzuki.jpg",
-    href: "/services#led-signs",
-    icon: "Zap",
-  },
-  {
-    title: "Storefront Signs",
-    description:
-      "Complete storefront signage solutions including awnings, window graphics, and blade signs.",
+      "A coordinated look for your fascia, windows, and doors, mocked up on a photo of your actual storefront.",
     image: "/images/storefront-clean-healthy.jpg",
-    href: "/services#storefront",
-    icon: "Clock",
+    href: "/services#storefront-sign-design",
+    icon: "Store",
+  },
+  {
+    title: "Vehicle Wrap Design",
+    description:
+      "Eye-catching full and partial wrap layouts on accurate vehicle templates, delivered as print-ready files.",
+    image: "/images/vehicle-warehouse.jpg",
+    href: "/services#vehicle-wrap-design",
+    icon: "Car",
+  },
+  {
+    title: "Banner & Display Design",
+    description:
+      "Bold artwork for banners, trade show booths, and event backdrops, sized and set up for any printer.",
+    image: "/images/banner-grandcanyon.jpg",
+    href: "/services#banner-display-design",
+    icon: "Flag",
+  },
+  {
+    title: "Monument & Pylon Sign Design",
+    description:
+      "Concept designs for property-entrance and multi-tenant signs that fit your brand and your site's sign criteria.",
+    image: "/images/monument-valet-dusk.jpg",
+    href: "/services#monument-sign-design",
+    icon: "Landmark",
+  },
+  {
+    title: "Sign Design Consultation",
+    description:
+      "Expert advice on visibility, readability, color, and HOA or landlord sign criteria before you commit.",
+    image: "/images/reception-allstate.jpg",
+    href: "/services#design-consultation",
+    icon: "Lightbulb",
   },
 ]
 
 // ------------------------------------------------------------
 //  HOMEPAGE STATS BAR  (the blue bar with numbers)
+//  Only use numbers you can document.
 // ------------------------------------------------------------
 export const statsBar = [
-  { value: "500+", label: "Signs Installed", icon: "Award" },
   { value: "20+", label: "Years in Las Vegas", icon: "Clock" },
-  { value: "98%", label: "Client Satisfaction", icon: "Star" },
-  { value: "50+", label: "Team Members", icon: "Users" },
+  { value: "100%", label: "Custom Designs", icon: "Star" },
+  { value: "Free", label: "Design Consultation", icon: "CheckCircle" },
+  { value: "1-on-1", label: "Owner-Led Service", icon: "Users" },
 ]
 
 // ------------------------------------------------------------
@@ -128,33 +142,33 @@ export const statsBar = [
 export const gallerySlides = [
   {
     src: "/images/reception-allstate.jpg",
-    alt: "Allstate interior dimensional sign",
-    caption: "Interior & Reception Signs",
+    alt: "Allstate interior dimensional sign design",
+    caption: "Interior & Reception Sign Design",
   },
   {
     src: "/images/vehicle-warehouse.jpg",
-    alt: "Warehouse & Logistics Las Vegas trailer wrap",
-    caption: "Vehicle Wraps",
+    alt: "Warehouse & Logistics Las Vegas trailer wrap design",
+    caption: "Vehicle Wrap Design",
   },
   {
     src: "/images/pylon-capella.jpg",
-    alt: "Capella Auto Center pylon sign",
-    caption: "Monument Signs",
+    alt: "Capella Auto Center pylon sign design",
+    caption: "Monument & Pylon Sign Design",
   },
   {
     src: "/images/storefront-clean-healthy.jpg",
-    alt: "Clean & Healthy Homes storefront sign",
-    caption: "Storefront Signs",
+    alt: "Clean & Healthy Homes storefront sign design",
+    caption: "Storefront Sign Design",
   },
   {
     src: "/images/reception-all-access.jpg",
-    alt: "All Access Insurance dimensional wall sign",
-    caption: "Dimensional Letters",
+    alt: "All Access Insurance dimensional wall sign design",
+    caption: "Dimensional Lettering Design",
   },
   {
     src: "/images/reception-carwiz.jpg",
-    alt: "TheCarWiz reception sign",
-    caption: "Custom Signs",
+    alt: "TheCarWiz reception sign design",
+    caption: "Custom Sign Design",
   },
 ]
 
@@ -164,32 +178,32 @@ export const gallerySlides = [
 export const portfolioPreview = [
   {
     src: "/images/reception-sakha.jpg",
-    alt: "Sakha Agencies dimensional reception sign",
+    alt: "Sakha Agencies dimensional reception sign design",
     span: "col-span-2 row-span-2",
   },
   {
     src: "/images/storefront-cassell.jpg",
-    alt: "Cassell BPO storefront sign",
+    alt: "Cassell BPO storefront sign design",
     span: "",
   },
   {
     src: "/images/vehicle-alltemp.jpg",
-    alt: "All Temp Air Conditioning van wrap",
+    alt: "All Temp Air Conditioning van wrap design",
     span: "",
   },
   {
     src: "/images/pylon-capella.jpg",
-    alt: "Capella Auto Center pylon sign",
+    alt: "Capella Auto Center pylon sign design",
     span: "",
   },
   {
     src: "/images/reception-univ-phoenix.jpg",
-    alt: "University of Phoenix wall graphics",
+    alt: "University of Phoenix wall graphics design",
     span: "",
   },
   {
     src: "/images/vehicle-florist.jpg",
-    alt: "Florist delivery vehicle wrap",
+    alt: "Florist delivery vehicle wrap design",
     span: "col-span-2",
   },
 ]
@@ -199,27 +213,27 @@ export const portfolioPreview = [
 // ------------------------------------------------------------
 export const whyUs = [
   {
-    title: "Expert Design Team",
+    title: "Experienced Designer",
     description:
-      "Our award-winning designers work with you to create signage that perfectly represents your brand.",
+      "20+ years designing signs for Las Vegas businesses means designs that look great and are practical to build.",
     icon: "Star",
   },
   {
     title: "Fast Turnaround",
     description:
-      "We understand deadlines. Our streamlined process delivers your signs on time, every time.",
+      "We understand deadlines. Our streamlined design process delivers concepts and final files on schedule.",
     icon: "Clock",
   },
   {
-    title: "Premium Materials",
+    title: "Contractor-Ready Files",
     description:
-      "We use only the highest quality materials that withstand the harsh Las Vegas sun and weather.",
+      "You receive clean vector artwork, color specs, and dimensioned design drawings any licensed sign contractor can work from.",
     icon: "Shield",
   },
   {
-    title: "Full-Service Install",
+    title: "Local Design Know-How",
     description:
-      "From permits to installation, we handle every step so you can focus on your business.",
+      "We design with Las Vegas HOA and landlord sign criteria in mind, so your concept is ready for the next step.",
     icon: "CheckCircle",
   },
 ]
@@ -227,158 +241,141 @@ export const whyUs = [
 export const whyUsImage = "/images/reception-sakha.jpg"
 
 // ------------------------------------------------------------
-//  TESTIMONIALS  (customer reviews on homepage)
+//  TESTIMONIALS
+//  Only add REAL reviews from design clients, with their permission.
+//  Reviews must describe design work, not installation or fabrication.
 // ------------------------------------------------------------
-export const testimonials = [
-  {
-    name: "Mike Torres",
-    business: "Torres Auto Group",
-    text: "Best Signs transformed our dealership. The channel letters are stunning at night and we've seen a noticeable increase in walk-in customers.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Chen",
-    business: "Chen's Restaurant",
-    text: "Professional from start to finish. They handled all the permits, installed everything perfectly, and the sign looks incredible. Highly recommend!",
-    rating: 5,
-  },
-  {
-    name: "David Wilson",
-    business: "Wilson Properties",
-    text: "We've used Best Signs for 5 properties now. Consistently excellent quality and service. They are our go-to sign company in Las Vegas.",
-    rating: 5,
-  },
-]
+export const testimonials: { name: string; business: string; text: string; rating: number }[] = []
 
 // ------------------------------------------------------------
 //  SERVICES PAGE  (full service details)
 // ------------------------------------------------------------
 export const servicesPage = [
   {
-    id: "channel-letters",
-    title: "Channel Letters",
-    icon: "Lightbulb",
-    tagline: "Illuminated 3D lettering that commands attention day and night",
+    id: "custom-sign-design",
+    title: "Custom Sign Design",
+    icon: "Sparkles",
+    tagline: "Original concepts built around your brand",
     description:
-      "Channel letters are the gold standard in commercial signage. Our custom fabricated, individually formed letters can be front-lit, back-lit (halo), or combination-lit to create stunning storefront visibility that drives foot traffic 24/7.",
+      "Every business is different, so every design starts from scratch. We turn your logo, colors, and goals into sign concepts, then show you photo-realistic renderings, including day and night views, so you know exactly what you are getting before you hire anyone to build it.",
     features: [
-      "Front-lit, back-lit, and halo-lit options",
-      "Interior and exterior grade aluminum construction",
-      "Energy-efficient LED illumination",
-      "Custom colors, fonts, and sizes",
-      "UL-listed electrical components",
-      "Professional installation included",
+      "Original concepts, not templates",
+      "3D renderings and day/night previews",
+      "Logo cleanup and vectorization",
+      "Dimensional, lobby, and interior sign designs",
+      "Multiple rounds of revisions",
+      "Final vector files and color specs",
     ],
-    image: "/images/fabrication-letters.jpg",
-    imageAlt: "Channel letter components being fabricated in shop",
+    image: "/images/custom-femz.jpg",
+    imageAlt: "FEMZ Las Vegas custom dimensional logo sign design",
   },
   {
-    id: "monument-signs",
-    title: "Monument Signs",
-    icon: "Landmark",
-    tagline: "Ground-level presence that establishes your brand's authority",
-    description:
-      "Monument signs create a lasting first impression at property entrances. Built to withstand Las Vegas's extreme weather conditions, our monument signs combine durable materials like stone, brick, aluminum, and HDU foam with precision-crafted lettering and lighting.",
-    features: [
-      "Multi-tenant directory capability",
-      "Illuminated and non-illuminated options",
-      "Stone, brick, and metal finishes",
-      "Custom logo and graphic integration",
-      "Low-voltage LED uplight packages",
-      "HOA and commercial park approved designs",
-    ],
-    image: "/images/monument-valet-dusk.jpg",
-    imageAlt: "Illuminated monument sign at dusk",
-  },
-  {
-    id: "vehicle-wraps",
-    title: "Vehicle Wraps",
-    icon: "Car",
-    tagline: "Turn your fleet into rolling billboards across Las Vegas",
-    description:
-      "A professionally wrapped vehicle generates 30,000–70,000 impressions daily. We use 3M and Avery Dennison premium vinyl films with precision-cut graphics that protect your paint while delivering vivid brand messaging on every drive.",
-    features: [
-      "Full wraps, partial wraps, and spot graphics",
-      "3M and Avery premium vinyl materials",
-      "Fleet pricing for 2+ vehicles",
-      "Custom design included in pricing",
-      "Paint-safe installation and removal",
-      "Interior trim and window graphics available",
-    ],
-    image: "/images/vehicle-warehouse.jpg",
-    imageAlt: "Warehouse & Logistics Las Vegas branded trailer wrap",
-  },
-  {
-    id: "banners",
-    title: "Banners & Displays",
-    icon: "Flag",
-    tagline: "High-impact graphics for events, promotions, and grand openings",
-    description:
-      "From grand opening banners to trade show displays and event backdrops, we produce bold, weather-resistant graphics on heavy-duty substrates. Our large-format printing delivers sharp, vivid colors that stop people in their tracks.",
-    features: [
-      "13oz and 18oz vinyl banner options",
-      "Mesh banners for wind resistance",
-      "Retractable banner stands",
-      "Trade show booth graphics",
-      "Grommets, pole pockets, and mounting hardware",
-      "Rush production available",
-    ],
-    image: "/images/storefront-cassell.jpg",
-    imageAlt: "Large format banner and display graphics",
-  },
-  {
-    id: "led-signs",
-    title: "LED Signs",
-    icon: "Zap",
-    tagline: "Dynamic digital messaging that evolves with your business",
-    description:
-      "LED signs give you the power to change your message in seconds. From single-color scrolling text to full-color video-capable displays, our LED solutions help restaurants, retailers, and service businesses promote specials, hours, and announcements in real time.",
-    features: [
-      "Full-color and single-color options",
-      "Wireless and remote programming",
-      "Outdoor and indoor rated enclosures",
-      "Custom cabinet sizes and shapes",
-      "Integrated with monument and pylon signs",
-      "Lifetime LED panel warranty",
-    ],
-    image: "/images/storefront-nevada-suzuki.jpg",
-    imageAlt: "Nevada Suzuki illuminated cabinet sign",
-  },
-  {
-    id: "storefront-signs",
-    title: "Storefront Signs",
+    id: "storefront-sign-design",
+    title: "Storefront Sign Design",
     icon: "Store",
-    tagline: "Complete storefront branding from fascia to window graphics",
+    tagline: "A cohesive look from fascia to front door",
     description:
-      "Your storefront is your first sales rep. We handle everything from cabinet signs and fascia letters to window graphics, door decals, and awning signs — delivering a cohesive brand experience that attracts and retains customers.",
+      "Your storefront is your first sales rep. We design a coordinated package of fascia sign, window graphics, door decals, and hours graphics, mocked up on a photo of your actual building, so your brand looks consistent from the street to the counter.",
     features: [
-      "Cabinet / box signs with LED face",
-      "Dimensional letters (routed aluminum, acrylic)",
-      "Window graphics and frosted vinyl",
-      "Awning and canopy signs",
-      "Door decals and hours graphics",
+      "Mockups on a photo of your storefront",
+      "Fascia and dimensional letter designs",
+      "Window and frosted-glass graphic designs",
+      "Door decal and hours graphic layouts",
+      "Readability review for street visibility",
       "Complete brand package pricing",
     ],
     image: "/images/storefront-clean-healthy.jpg",
-    imageAlt: "Clean & Healthy Homes modern storefront signage",
+    imageAlt: "Clean & Healthy Homes storefront sign design",
   },
   {
-    id: "custom-signs",
-    title: "Custom Signs",
-    icon: "Sparkles",
-    tagline: "If you can imagine it, we can build it",
+    id: "vehicle-wrap-design",
+    title: "Vehicle Wrap Design",
+    icon: "Car",
+    tagline: "Turn your fleet into rolling billboards",
     description:
-      "Our in-house design and fabrication team handles one-of-a-kind projects that don't fit a standard category. Neon-style LED, architectural signage, interior wayfinding systems, 3D logos, and artistic installations — we turn creative concepts into physical reality.",
+      "We design full wraps, partial wraps, and spot graphics on accurate templates for your exact vehicle make and model. You get print-ready files and a 360° preview, ready to hand to the wrap shop of your choice.",
     features: [
-      "In-house design and rendering",
-      "Neon, blade, and projecting signs",
-      "Wayfinding and directory systems",
-      "3D fabricated logos and murals",
-      "ADA-compliant signage systems",
-      "Permit pulling and city approval assistance",
+      "Full, partial, and spot graphic layouts",
+      "Templates matched to your vehicle model",
+      "360° design previews",
+      "Consistent fleet branding",
+      "Fleet pricing for 2+ vehicle designs",
+      "Print-ready files for any wrap shop",
     ],
-    image: "/images/custom-femz.jpg",
-    imageAlt: "FEMZ Las Vegas custom dimensional logo sign",
+    image: "/images/vehicle-warehouse.jpg",
+    imageAlt: "Warehouse & Logistics Las Vegas trailer wrap design",
+  },
+  {
+    id: "banner-display-design",
+    title: "Banner & Display Design",
+    icon: "Flag",
+    tagline: "Bold graphics for events, promotions, and grand openings",
+    description:
+      "Grand openings, trade shows, and promotions need graphics that stop people in their tracks. We design banners, retractable stands, booth backdrops, and event graphics, correctly sized and set up so any printer can produce them without surprises.",
+    features: [
+      "Grand opening and promotional banner designs",
+      "Retractable banner stand artwork",
+      "Trade show booth graphic layouts",
+      "Event backdrop and step-and-repeat designs",
+      "Correct bleeds, sizes, and color profiles",
+      "Rush design available",
+    ],
+    image: "/images/banner-grandcanyon.jpg",
+    imageAlt: "Large format banner graphic design",
+  },
+  {
+    id: "monument-sign-design",
+    title: "Monument & Pylon Sign Design",
+    icon: "Landmark",
+    tagline: "Concept designs for a strong first impression",
+    description:
+      "Monument and pylon signs set the tone at your property entrance. We create concept designs, including finish selections, tenant panel layouts, and day/night renderings, shaped around your brand and your property's sign criteria. Engineering, fabrication, permits, and installation are handled by the licensed contractor you hire.",
+    features: [
+      "Concept renderings on a photo of your site",
+      "Multi-tenant panel layouts",
+      "Finish and color selections",
+      "Day and night design previews",
+      "Designed to HOA / landlord sign criteria",
+      "Design files to share with your contractor",
+    ],
+    image: "/images/monument-valet-dusk.jpg",
+    imageAlt: "Monument sign design shown at dusk",
+  },
+  {
+    id: "wayfinding-design",
+    title: "Wayfinding & Interior Sign Design",
+    icon: "Lightbulb",
+    tagline: "Help people find their way, on brand",
+    description:
+      "Offices, clinics, and campuses need clear signage inside. We plan and design directories, room ID signs, directional signs, and lobby graphics, with a sign schedule that lists every sign, its message, and where it goes.",
+    features: [
+      "Lobby and reception sign designs",
+      "Directory and directional sign layouts",
+      "Room ID sign designs",
+      "Sign schedule and location plan",
+      "ADA-oriented layout guidance",
+      "Consistent family of designs",
+    ],
+    image: "/images/reception-univ-phoenix.jpg",
+    imageAlt: "University of Phoenix interior graphics design",
+  },
+  {
+    id: "design-consultation",
+    title: "Sign Design Consultation",
+    icon: "Zap",
+    tagline: "Expert advice before you spend a dollar on building",
+    description:
+      "Not sure what you need? Book a consultation. We review your brand, your building, and your goals, then advise on sign type, size, color, readability, and HOA or landlord sign criteria, so you go into contractor bids knowing exactly what to ask for.",
+    features: [
+      "Brand and visibility review",
+      "Sign type and size recommendations",
+      "Color and readability guidance",
+      "HOA / landlord sign criteria review",
+      "Design brief to share with contractors",
+      "Free initial consultation",
+    ],
+    image: "/images/reception-allstate.jpg",
+    imageAlt: "Allstate interior sign design",
   },
 ]
 
@@ -387,70 +384,68 @@ export const servicesPage = [
 // ------------------------------------------------------------
 export const about = {
   stats: [
-    { value: "500+", label: "Signs Installed" },
     { value: "20+", label: "Years in Las Vegas" },
-    { value: "98%", label: "Client Satisfaction" },
+    { value: "100%", label: "Custom Designs" },
+    { value: "Free", label: "Design Consultation" },
     { value: "1", label: "Dedicated Owner" },
   ],
 
-  storyImage: "/images/fabrication-letters.jpg",
+  storyImage: "/images/reception-sakha.jpg",
 
   storyParagraphs: [
-    "Best Signs Las Vegas was founded by Jim Boone, a sign industry veteran who saw that Las Vegas businesses deserved better than cookie-cutter signage. Located at 3111 S Valley View Blvd, we deliver custom-crafted signs that make your business impossible to miss.",
-    "Today, our 25,000 sq ft facility houses CNC routers, large-format UV printers, metal fabrication equipment, and a dedicated vehicle wrap installation bay. From concept to installation, everything happens under one roof — ensuring quality control and faster delivery times.",
-    "We've completed over 500 sign projects for restaurants, retailers, hotels, medical offices, automotive businesses, and corporate campuses across the Las Vegas Valley. Our clients range from first-time small business owners to nationally recognized brands expanding into the Nevada market.",
+    "Best Signs Las Vegas was founded by Jim Boone, a sign industry veteran who saw that Las Vegas businesses deserved better than cookie-cutter signage. Located at 3111 S Valley View Blvd, we design custom signs that make your business impossible to miss.",
+    "Today we are a focused sign design studio. We work with you one-on-one, from a free consultation through concepts, renderings, and revisions, and deliver clean, ready-to-build artwork files. You then hire the licensed sign contractor of your choice to fabricate and install your sign.",
+    "Our designs serve restaurants, retailers, hotels, medical offices, automotive businesses, and corporate offices across the Las Vegas Valley, from first-time small business owners to nationally recognized brands.",
   ],
 
   values: [
     {
       icon: "Shield",
-      title: "Quality Craftsmanship",
+      title: "Quality Design",
       description:
-        "Every sign we build is crafted with premium materials and rigorous quality control. We don't ship a sign we wouldn't proudly put our own name on.",
+        "Every design we deliver is carefully crafted and checked. We don't send a file we wouldn't proudly put our own name on.",
     },
     {
       icon: "Clock",
       title: "Fast Turnaround",
       description:
-        "We know time is money. Our streamlined production process delivers most projects on schedule — and our rush service gets you signs when you need them most.",
+        "We know time is money. Our streamlined design process delivers most projects on schedule, and rush design is available when you need it.",
     },
     {
       icon: "DollarSign",
-      title: "Competitive Pricing",
+      title: "Transparent Pricing",
       description:
-        "Factory-direct pricing means you get Las Vegas's best sign quality without the markup. We offer transparent quotes with no hidden fees.",
+        "Clear design quotes with no hidden fees. You own your final files and can take them to any licensed contractor.",
     },
     {
       icon: "MapPin",
       title: "Local Las Vegas Expertise",
       description:
-        "We know Las Vegas zoning, permit requirements, HOA rules, and climate demands. Our local knowledge saves you time and prevents costly mistakes.",
+        "We design with Las Vegas sign codes, HOA rules, and the desert climate in mind, so your design is ready for the next step.",
     },
   ],
 
   team: [
     {
       name: "Jim Boone",
-      role: "Owner & Operator",
+      role: "Owner & Lead Designer",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-      bio: "Las Vegas sign industry veteran with deep expertise in custom fabrication, installation, and delivering results for local businesses.",
+      bio: "Las Vegas sign industry veteran with deep expertise in sign design and branding for local businesses.",
     },
   ],
 
+  // Only list milestones you can document.
   milestones: [
-    { year: "2004", event: "Founded Best Signs Las Vegas in a 2,000 sq ft shop on the east side" },
-    { year: "2009", event: "Expanded to 10,000 sq ft facility, added vehicle wrap division" },
-    { year: "2014", event: "Completed 1,000th sign installation — recognized by the Nevada Sign Association" },
-    { year: "2018", event: "Launched LED and digital signage division, grew team to 30+ members" },
-    { year: "2022", event: "Opened new 25,000 sq ft production facility, largest in Southern Nevada" },
-    { year: "2024", event: "Celebrated 500+ active clients and 20 years of Las Vegas sign making" },
+    { year: "2004", event: "Founded Best Signs Las Vegas" },
+    { year: "2024", event: "Celebrated 20 years serving Las Vegas businesses" },
+    { year: "2026", event: "Refocused as a dedicated sign design studio" },
   ],
 
+  // Do NOT add "Licensed", "Insured", or "In-House Fabrication" here.
   certifications: [
-    { icon: "Shield", label: "Fully Licensed & Insured" },
-    { icon: "Award", label: "Nevada Sign Association Member" },
-    { icon: "Star", label: "5-Star Google Rated" },
-    { icon: "Wrench", label: "In-House Fabrication" },
+    { icon: "Star", label: "Custom Sign Design" },
+    { icon: "Award", label: "Free Design Consultation" },
+    { icon: "Users", label: "Owner-Led Service" },
     { icon: "MapPin", label: "Las Vegas Local Since 2004" },
   ],
 }

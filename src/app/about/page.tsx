@@ -5,9 +5,9 @@ import { AnimatedSection } from "@/components/AnimatedSection"
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Best Signs Las Vegas — founded in 2004 by Jim Boone. 20+ years serving Las Vegas businesses with custom signage, in-house fabrication, and full-service installation.",
+  description: "Best Signs Las Vegas — founded in 2004 by Jim Boone. 20+ years serving Las Vegas businesses with custom sign design and design consultation.",
   alternates: { canonical: "/about" },
-  openGraph: { title: "About Best Signs Las Vegas", description: "20+ years of custom sign fabrication in Las Vegas. In-house production, licensed & insured, Nevada Sign Association member.", url: "https://bestsignslv.com/about" },
+  openGraph: { title: "About Best Signs Las Vegas", description: "20+ years of custom sign design for Las Vegas businesses.", url: "https://bestsignslv.com/about" },
 }
 import {
   Shield,
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
               For over 20 years, we&apos;ve helped Las Vegas businesses stand out with
-              custom-crafted signs that are built to last and designed to perform.
+              custom sign designs that are made to stand out and designed to perform.
             </p>
           </AnimatedSection>
         </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={about.storyImage}
-                    alt="Best Signs Las Vegas production facility"
+                    alt="Best Signs Las Vegas sign design example"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -75,8 +75,8 @@ export default function AboutPage() {
                       <Award size={20} className="text-black" />
                     </div>
                     <div>
-                      <div className="text-white font-bold text-sm">Nevada Sign Association</div>
-                      <div className="text-gray-400 text-xs">Member &amp; Award Recipient</div>
+                      <div className="text-white font-bold text-sm">Sign Design Studio</div>
+                      <div className="text-gray-400 text-xs">Serving Las Vegas Since {business.yearFounded}</div>
                     </div>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 Est. {business.yearFounded} — {business.address.city}, {business.address.state}
               </span>
               <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white uppercase leading-tight mb-6">
-                Built in Las Vegas.<br />Built for Las Vegas.
+                Designed in Las Vegas.<br />Designed for Las Vegas.
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 {about.storyParagraphs.map((para, i) => (
@@ -270,7 +270,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
             <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white uppercase mb-4">
-              Let&apos;s Build Something Great
+              Let&apos;s Design Something Great
             </h2>
             <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">
               Whether you&apos;re opening a new location or refreshing your brand, we&apos;re
@@ -281,7 +281,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-[#3b82f6] hover:bg-[#3b82f6]/90 text-black font-bold px-10 py-4 rounded-lg uppercase tracking-wider shadow-lg shadow-[#3b82f6]/20 transition-all hover:-translate-y-0.5"
               >
-                Get a Free Quote
+                Free Design Consultation
                 <ArrowRight size={16} />
               </Link>
               <Link
